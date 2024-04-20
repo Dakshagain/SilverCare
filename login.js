@@ -55,6 +55,8 @@ document.querySelector('.form-container.sign-in-container form').addEventListene
       const user = userCredential.user;
       console.log("Signed in successfully: ", user);
       alert("Signed in successfully!");
+
+       window.location.href = 'https://htmlpreview.github.io./?https://github.com/Dakshagain/silvercare/blob/main/welcome.html'
     
     })
     .catch((error) => {
