@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SilverCare.com</title>
+    <link rel="icon" href="feviconLOGO.png"type="image/x-icon">
+
+    <script>
+      window.embeddedChatbotConfig = {
+      chatbotId: "ZkzbH_hBQXrjbu5F9_nY4",
+      domain: "www.chatbase.co"
+      }
+      </script>
+      <script
+      src="https://www.chatbase.co/embed.min.js"
+      chatbotId="ZkzbH_hBQXrjbu5F9_nY4"
+      domain="www.chatbase.co"
+      defer>
+      </script>
+
+    <link rel="stylesheet" href="./css/style.min.css">
+
+    <!-- for icons -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'> 
+    
+    <!-- carousels and slider in review part -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+</head>
+<body>
+    <nav>
+        <div class="container">
+                     <a href="index.html" class="nav__logo"><h3>SILVERCARE</h3></a>
+
+            <ul id="nav__items">
+                <li><a href="#">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#specialists">Specialists</a></li>
+                <li><a href="/blog silver insights/index.html">Blogs</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#appointment" class="btn">Make Appointment</a></li>
+            </ul>
+
+            <button id="open__nav-btn"><i class='bx bx-menu'></i></button>
+            <button id="close__nav-btn"><i class='bx bx-x' ></i></button>
+        </div>
+    </nav>
+
+    <!-- END OF NAV -->
+
+<style>.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: 10% auto; 
+  padding: 0; 
+  border: 1px solid #888;
+  width: 80%; 
+  max-width: 800px; 
+  height: 600px; 
+}
+
+.close {
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+
+
+
+
+
+    <header>
+        <div class="container">
+
+            <div class="header__content">
+                <h1>A full health service experience for your loved ones
+                </h1>
+                <p>
+                  Providing compassionate healthcare solutions for seniors, ensuring comfort and well-being.
+                </p>
+                <a href="#appointment" class="btn">Make Appointment</a> 
+
+<a href="#" class="btn" id="openModalBtn">Sign Up</a>
+
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+       
+        <iframe src="login.html" frameborder="0" style="width:100%; height:100%;"></iframe>
+    </div>
+</div>
+
+            </div>
+            <div class="header__image">
+                <img src="./assets/header.svg" alt="Header Image">
+            </div>
+        </div>
+    </header>
+    <script>
+      document.getElementById('openModalBtn').addEventListener('click', function(event) {
+          event.preventDefault();
+          document.getElementById('myModal').style.display = 'block';
+      });
+      
+      document.getElementsByClassName('close')[0].addEventListener('click', function() {
+          document.getElementById('myModal').style.display = 'none';
+      });
+      
+    
+      window.onclick = function(event) {
+          if (event.target == document.getElementById('myModal')) {
+              document.getElementById('myModal').style.display = 'none';
+          }
+      };
+      </script>
+      
+    <!--============================ END OF HEADER ===============================-->
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>
+          Tailored plans designed to optimize health and well-being, empowering you to live life to the fullest.
+        </p>
+        <div class="container">
+          <article>
+            <i class="bx bx-book-content"></i>
+            <div>
+              <h4>Online Booking</h4>
+              <small>
+                Streamline your scheduling with our user-friendly platform, making appointments hassle-free and efficient.
+              </small>
+            </div>
+          </article>
+          <article>
+            <i class='bx bx-trophy'></i>
+            <div>
+              <h4>Qualified Doctors</h4>
+              <small>
+                Our team of highly qualified doctors brings years of experience and expertise, ensuring top-notch healthcare services tailored to your needs.
+              </small>
+            </div>
+          </article>
+          <article>
+            <i class="bx bx-support"></i>
+            <div>
+              <h4>Private Support</h4>
+              <small>
+                Dedicated assistance tailored exclusively to you, ensuring personalized care and attention for your unique requirements.
+              </small>
+            </div>
+          </article>
+          <article>
+            <i class="bx bx-donate-heart"></i>
+            <div>
+              <h4>Medical Assistance
+                </h4>
+              <small>
+                Our team of professionals offers expert medical support and guidance, ensuring prompt and reliable care whenever you need it.
+              </small>
+            </div>
+          </article>
+          <article>
+            <i class="bx bx-first-aid"></i>
+            <div>
+              <h4>Emergency</h4>
+              <small>
+                Rapid response and expert care in critical situations, providing peace of mind during urgent medical needs.
+              </small>
+            </div>
+          </article>
+          <article>
+            <i class="bx bxl-meta"></i>
+            <div>
+              <h4>24 Hour Service</h4>
+              <small>
+                Continuous support and assistance, ensuring reliability and comfort for you or your loved ones.
+              </small>
+            </div>
+          </article>
+        </div>
+      </section>
+    <!--============================ END OF SERVICES ===============================-->
+
+
+    <section id="specialists">
+        <h2>Our Top Specialists</h2>
+        <p>At SilverCare, we take pride in our team of top specialists who are leaders in their fields. With years of experience and a commitment to excellence, our specialists are dedicated to providing personalized care and innovative treatments to our patients. Explore their profiles below to learn more about their expertise and contributions to healthcare.</p>
+        <div class="container">
+            <article>
+                <div class="specialist__image">
+                    <img src="./assets/specialist1.jpg" alt="Specialist One">
+                </div>
+                <div class="specialist__details">
+                    <h4>Dr. Zain Ahmed</h4>
+                    <small>Medicine Specialist</small>
+                </div>
+                <div class="specialist__socials">
+                    <a href="https://linkedin.com" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class='bx bxl-twitter' ></i></a>
+                    <a href="https://facebook.com" target="_blank"><i class='bx bxl-facebook' ></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                </div>
+                <a href="https://wa.me/+919780189909?Hello%20there" class="specialist__whatsapp" target="_blank"><i class='bx bxl-whatsapp' ></i></a>
+            </article>
+            
+            <article>
+                <div class="specialist__image">
+                    <img src="./assets/specialist2.jpg" alt="Specialist Two">
+                </div>
+                <div class="specialist__details">
+                    <h4>Dr. Pooja Sharma</h4>
+                    <small>Anaesthetic Specialist</small>
+                </div>
+                <div class="specialist__socials">
+                    <a href="https://linkedin.com" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class='bx bxl-twitter' ></i></a>
+                    <a href="https://facebook.com" target="_blank"><i class='bx bxl-facebook' ></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                </div>
+                <a href="https://wa.me/+919780189909?Hello%20there" class="specialist__whatsapp" target="_blank"><i class='bx bxl-whatsapp' ></i></a>
+            </article>
+            
+            <article>
+                <div class="specialist__image">
+                    <img src="./assets/specialist3.jpg" alt="Specialist Three">
+                </div>
+                <div class="specialist__details">
+                    <h4>Dr. Tamara Otusanya</h4>
+                    <small>Orthopedic Specialist</small>
+                </div>
+                <div class="specialist__socials">
+                    <a href="https://linkedin.com" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class='bx bxl-twitter' ></i></a>
+                    <a href="https://facebook.com" target="_blank"><i class='bx bxl-facebook' ></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                </div>
+                <a href="https://wa.me/+919780189909?Hello%20there" class="specialist__whatsapp" target="_blank"><i class='bx bxl-whatsapp' ></i></a>
+            </article>
+            
+            <article>
+                <div class="specialist__image">
+                    <img src="./assets/specialist4.jpg" alt="Specialist Four">
+                </div>
+                <div class="specialist__details">
+                    <h4>Dr. Mariam Khalid</h4>
+                    <small>Cardiology Specialist</small>
+                </div>
+                <div class="specialist__socials">
+                    <a href="https://linkedin.com" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class='bx bxl-twitter' ></i></a>
+                    <a href="https://facebook.com" target="_blank"><i class='bx bxl-facebook' ></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                </div>
+                <a href="https://wa.me/+919780189909?Hello%20there" class="specialist__whatsapp" target="_blank"><i class='bx bxl-whatsapp' ></i></a>
+            </article>
+        </div>
+    </section>
+    <!--============================ END OF SPECIALISTS ===============================-->
+
+
+
+    <section id="testimonials" class="swiper mySwiper">
+      <h2>What Our Patients Say</h2>
+      <p> Read what some of our patients have to say about their experiences with us.</p>
+
+      <div class="swiper-wrapper">
+        <article class="swiper-slide">
+          <p>
+            From the moment our grandmother fell sick, she was treated like family by silvercare. The compassionate care and regular updates kept us reassured. Thanks to them, she's now on the mend. Grateful for the exceptional service!
+          <div class="patient">
+            <div class="avatar">
+              <img src="./assets/avatar1.jpg" alt="Patient One">
+            </div>
+            <div class="patient__details">
+              <h5>Nana Ama McBrown</h5>
+              <small>Patient's family member</small>
+            </div>
+          </div>
+        </article>
+        <article class="swiper-slide">
+          <p>
+            I've experienced exceptional care. The staff is not just skilled but also compassionate and attentive. Grateful for their support.
+          </p>
+          <div class="patient">
+            <div class="avatar">
+              <img src="./assets/avatar2.jpg" alt="Patient Two">
+            </div>
+            <div class="patient__details">
+              <h5>John Dumelo</h5>
+              <small>Patient</small>
+            </div>
+          </div>
+        </article>
+        <article class="swiper-slide">
+          <p>
+            Big thanks SilverCare for their 24/7 home care. The nurses and caregivers were always there, taking great care of me. Recovered comfortably at home, all thanks to them. Highly recommend their services!
+          <div class="patient">
+            <div class="avatar">
+              <img src="./assets/avatar3.jpg" alt="Patient Three">
+            </div>
+            <div class="patient__details">
+              <h5>Edem Quist</h5>
+              <small>Patient</small>
+            </div>
+          </div>
+        </article>
+        <article class="swiper-slide">
+          <p>
+            Our experience with the team was outstanding. The doctors and nurses were knowledgeable, caring, and always took the time to explain everything to us. We felt supported and well taken care of throughout our entire journey.
+          </p>
+          <div class="patient">
+            <div class="avatar">
+              <img src="./assets/avatar4.jpg" alt="Patient Four">
+            </div>
+            <div class="patient__details">
+              <h5>Chantel Nontokozo</h5>
+              <small>Patient</small>
+            </div>
+          </div>
+        </article>
+        <article class="swiper-slide">
+          <p>
+            Our experience with the team was outstanding. The doctors and nurses were knowledgeable, caring, and always took the time to explain everything to us. We felt supported and well taken care of throughout our entire journey.
+
+          </p>
+          <div class="patient">
+            <div class="avatar">
+              <img src="./assets/avatar5.jpg" alt="Patient Five">
+            </div>
+            <div class="patient__details">
+              <h5>Jackie Appiah</h5>
+              <small>Patient</small>
+            </div>
+          </div>
+        </article>
+        <article class="swiper-slide">
+          <p>
+            Our experience with the team was outstanding. The doctors and nurses were knowledgeable, caring, and always took the time to explain everything to us. We felt supported and well taken care of throughout our entire journey.
+
+          </p>
+          <div class="patient">
+            <div class="avatar">
+              <img src="./assets/avatar6.jpg" alt="Patient Six">
+            </div>
+            <div class="patient__details">
+              <h5>Diana Ayi</h5>
+              <small>Patient</small>
+            </div>
+          </div>
+        </article>
+        <article class="swiper-slide">
+          <p>
+            Our experience with the team was outstanding. The doctors and nurses were knowledgeable, caring, and always took the time to explain everything to us. We felt supported and well taken care of throughout our entire journey.
+
+          </p>
+          <div class="patient">
+            <div class="avatar">
+              <img src="./assets/avatar7.jpg" alt="Patient Seven">
+            </div>
+            <div class="patient__details">
+              <h5>John Doe</h5>
+              <small>Patient</small>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="swiper-pagination"></div>
+    </section>
+    <!--============================ END OF TESTIMONIALS ===============================-->
+
+
+    <section id="appointment">
+      <div class="container">
+        <div class="info">
+          <h2>Get An Appointment</h2>
+          <p>
+            Take the first step towards better health by scheduling an appointment with us.
+
+          <article>
+            <div class="info__icon">
+              <i class='bx bx-user'></i>
+            </div>
+            <div>
+              <h4>Experience Doctors</h4>
+              <small>
+                Our team of professionals offers expert medical support and guidance, ensuring prompt and reliable care whenever you need it.
+              </small>
+            </div>
+          </article>
+          <article>
+            <div class="info__icon">
+              <i class='bx bx-band-aid' ></i>
+            </div>
+            <div>
+              <h4>Advanced technology</h4>
+              <small>
+                We leverage the latest advancements in technology to deliver precise diagnoses and effective treatments. Experience healthcare at its most advanced with us.
+              </small>
+            </div>
+          </article>
+          <article>
+            <div class="info__icon">
+              <i class='bx bx-first-aid'></i>
+            </div>
+            <div>
+              <h4>Emergency Care</h4>
+              <small>
+                Our expert team is ready 24/7 to provide swift and effective care in emergencies. Trust us for prompt, compassionate, and life-saving treatment. </small>
+            </div>
+          </article>
+        </div>
+<!-- formspree form  -->
+
+        <form action="https://formspree.io/f/mayrprnb" method="POST">
+
+          <div class="form__group">
+            <label for="name">Name</label>
+            <input type="text" placeholder="Enter Your Name" name="Patient's Name" id="name" required>
+          </div>
+          <div class="form__group">
+            <label for="phone">Phone Number</label>
+            <input type="number" placeholder="Enter Phone Number" name="Phone Number" id="phone" required>
+          </div>
+          <div class="form__group">
+            <label for="date">Date</label>
+            <input type="date" placeholder="Choose a date" name="Date" id="date" required>
+          </div>
+
+          <div class="form__group">
+            <label for="department">Select Department</label>
+            <select name="Department" id="department" required>
+              <option value="Department One">Medicine Specialist</option>
+              <option value="Department Two">Anaesthetic Specialist</option>
+              <option value="Department Three">Orthopedic Specialist</option>
+              <option value="Department Four">Cardiology Specialist</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label for="doctor">Select Doctor</label>
+            <select name="Doctor" id="doctor" required>
+              <option value="Doctor One">Zain Ahmed</option>
+              <option value="Doctor Two">Pooja Sharma</option>
+              <option value="Doctor Three">Tamara Otusanya</option>
+              <option value="Doctor Four">Mariam Khalid</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label for="message">Additional Information</label>
+            <textarea name="Added Message" id="message" rows="6" placeholder="Add a message" required></textarea>
+          </div>
+          <input type="submit" value="Submit Request" class="btn-primary">
+        </form>
+      </div>
+    </section>
+    <!--============================ END OF APPOINTMENT ===============================-->
+
+
+    
+    <footer>
+      <div class="container">
+        <article>
+          <a href="#" class="footer__logo"><h3>SILVERCARE</h3></a>
+          <p>
+            Specializing in Elderly Care Excellence.
+          </p>
+          <div>
+            <i class="bx bxs-phone"></i>
+            <small>+919780189909</small>
+          </div>
+          <div>
+            <i class="bx bx-mail-send"></i>
+            <small>support@silvercare.com</small>
+          </div>
+        </article>
+
+        <article>
+          <h3>Support</h3>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Cookie Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </article>
+
+        <article>
+          <h3>Permalinks</h3>
+          <a href="#">Home</a>
+          <a href="#services">Services</a>
+          <a href="#specialists">Specialists</a>
+          <a href="#testimonials">Testimonials</a>
+        </article>
+
+        <article>
+          <h3>Contact Us</h3>
+          <p>+919780189909</p>
+          <p>FAQs</p>
+          <div class="footer__socials">
+            <a href="#"><i class="bx bxl-linkedin"></i></a>
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+            <a href="#"><i class="bx bxl-facebook"></i></a>
+            <a href="#"><i class="bx bxl-instagram"></i></a>
+          </div>
+        </article>
+      </div>
+      <div class="copyright">
+        <small>&copy; Copyright SILVERCARE.COM. All Rights Reserved.</small> <br>
+        <small><h3>Made by Daksh Bhatt, Arsh Mehta and Om Chopra</h3></small>
+      </div>
+    </footer>
+
+
+
+
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
